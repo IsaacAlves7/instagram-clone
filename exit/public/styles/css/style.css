@@ -15,30 +15,38 @@ body{
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .instagram-wrapper{
     display: flex;
     align-items: center;
-    justify-content: start;
-    width: 60%;
-    height: 100vh;
+    justify-content: center;
+    flex-direction: row;
+    width: 40%; height: 94vh;
+    margin-top: -100px;
 }
 
 .instagram-phone{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-}
+    width: 87%; height: 70rem;
 
+    background-image: url('/exit/public/images/slider/instagram-phone.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* 
 .instagram-phone img{
     height: 50rem;
-}
+} */
 
-.profile-photo img{
-    width: 150px;
-    height: 150px;
+.group .profile-photo img{
+    width: 100px;
+    height: 100px;
 }
 
 .instagram-continue{
@@ -59,27 +67,29 @@ body{
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid transparent;
+    border: 1px solid #d6d6d6;
 }
 
-.group:nth-child(1){ /*seletor de elementos filhos*/
-    min-height: 19rem;
+.group:nth-child(1){
+    min-height: 23rem;
+    margin: 7px;
+}
+
+.group:nth-child(2){ 
+    margin: 2px;
 }
 
 .instagram-logo{
-    height: 3rem;
-}
-
-.profile-photo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
+    height: 3.5rem;
 }
 
 .profile-photo img{
-    height: 6rem;
-    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 177px; height: 177px;
 }
 
 .instagram-login{
@@ -123,14 +133,38 @@ body{
     height: 3rem;
     width: 10rem;
     background-size: cover;
+    margin: 7px;
 }
 
 .app-download:nth-child(1){
-    background-image: url('/public/images/img/apple-button.png');
+    background-image: url('https://cdn.worldvectorlogo.com/logos/aivalable-on-the-app-store-2.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .app-download:nth-child(2){
-    background-image: url('/public/images/img/googleplay-button.png');
+    background-image: url('https://cdn.worldvectorlogo.com/logos/google-2.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+footer {
+    text-align: center;
+    padding: 7px;
+    margin-top: 17px;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.footer a{
+    text-align: center;
+    padding: 0 7px 7px 0;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.footer a:active{
+    color: #ccc;
 }
 
 @media screen and (max-width: 1024px){
