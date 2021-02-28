@@ -19,6 +19,18 @@ body{
     flex-direction: column;
 }
 
+.instagram-wrapper > .instagram-phone{
+    display: grid;
+    grid-template-columns: repeat(31, 1fr);
+    grid-template-rows: repeat(31, 1fr);
+}
+
+#slider{
+    grid-column-start: 5;
+    grid-row-start: 5;
+    z-index: 500;
+}
+
 .instagram-wrapper{
     display: flex;
     align-items: center;
@@ -39,10 +51,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-/* 
-.instagram-phone img{
-    height: 50rem;
-} */
 
 .group .profile-photo img{
     width: 100px;
@@ -71,8 +79,10 @@ body{
 }
 
 .group:nth-child(1){
-    min-height: 23rem;
+    height: 23rem;
     margin: 7px;
+    padding-top: 37px;
+    padding-bottom: 20px;
 }
 
 .group:nth-child(2){ 
@@ -138,13 +148,11 @@ body{
 
 .app-download:nth-child(1){
     background-image: url('https://cdn.worldvectorlogo.com/logos/aivalable-on-the-app-store-2.svg');
-    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .app-download:nth-child(2){
     background-image: url('https://cdn.worldvectorlogo.com/logos/google-2.svg');
-    background-size: 100%;
     background-repeat: no-repeat;
 }
 
